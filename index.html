@@ -1,35 +1,36 @@
 <html lang="en">
   <head>
-    <title>CountDown</title>
+    <title>Slider</title>
     <!-- Adding CSS file -->
     <link rel="stylesheet" href="./style.css" />
-    <script
+    <!-- <script
       src="https://code.jquery.com/jquery-3.7.0.min.js"
       integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
       crossorigin="anonymous"
-    ></script>
-    <script src="./src/countdown.js"></script>
+    ></script> -->
   </head>
   <body>
-    <div class="container">
-      <h1>CountDown</h1>
-      <p>How Many Days Are Left for Diwali 2023</p>
-      <div id="timer2"></div>
-      <div id="timer"></div>
-    </div>
+    <h1>ANiMAtEd Gallery</h1>
+    <div class="Gallery">
+      <div class="image-box active">
+        <img src="./Img/1.jpg" alt="1" />
+      </div>
 
-    <script type="text/javascript">
-      $("#timer").countdown("2023/11/10", function (event) {
-        $(this).html(
-          event.strftime(
-            "<div id='week'><div>%w weeks </div>" +
-              "<div > %d days </div>" +
-              " <div >%H Hours</div> " +
-              "<div >%M Min %S Sec</div></div>"
-          )
-        );
-      });
-    </script>
-    <!-- <script src="script.js"></script> -->
+      <div class="image-box">
+        <img src="./Img/2.jpg" alt="2" />
+      </div>
+
+      <div class="image-box">
+        <img src="./Img/3.jpg" alt="3" />
+      </div>
+
+      <div class="image-box">
+        <img src="./Img/4.jpg" alt="4" />
+      </div>
+
+      <div class="image-box">
+        <img src="./Img/5.jpg" alt="5" />
+      </div>
+    </div>
   </body>
 </html>
