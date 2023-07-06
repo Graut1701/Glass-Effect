@@ -1,44 +1,40 @@
-h1 {
-  text-align: center;
-  margin-top: 30px;
-  font-size: 40px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  background: url("https://www.crafttrip.in/image/cache/catalog/buddha/003-buddha-painting-800x534w.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Roboto", sans-serif;
 }
 
-.Gallery {
-  height: 80%;
-  width: 100%;
-  display: flex;
-  margin: 5% auto 0;
-  box-sizing: border-box;
+.container {
+  width: 750px;
+  height: 516px;
+  margin: 200px auto;
 }
 
-.image-box {
-  margin: 0 1%;
-  flex-grow: 1;
-  flex-basis: 0;
-  transition: 0.5s;
+.circle {
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(
+    90deg,
+    rgba(14, 0, 255, 1) 0%,
+    rgba(255, 0, 151, 1) 100%
+  );
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  border-radius: 50%;
+  z-index: -1;
 }
 
-.image-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.5s;
-}
-
-.image-box:hover {
-  flex-basis: 50%;
-}
-
-.active {
-  flex-basis: 50%;
-}
-
-.Gallery:hover .active {
-  flex-basis: 0;
-}
-
-.image-box:nth-child(1):hover {
-  flex-basis: 50%;
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
